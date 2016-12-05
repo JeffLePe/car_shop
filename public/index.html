@@ -5,6 +5,30 @@
     <title>Página Inicial</title>
 </head>
 <body>
-    <h1>Olá Mundo!</h1>
+    <h1>Cadastro de Vendas</h1>
+    <form action="/cadVenda" method="POST">
+        <label for="placa">Placa</label>
+        <input type="text" id="placa" name="placa">
+        <label for="marca">Marca</label>
+        <input type="text" id="marca" name="marca">
+        <label for="modelo">Modelo</label>
+        <input type="text" id="modelo" name="modelo">
+        <label for="ano">Ano</label>
+        <input type="text" id="ano" name="ano">
+        <label for="nome_cliente">Nome do Cliente</label>
+        <input type="text" id="nome_cliente" name="nome_cliente">
+        <label for="rg">RG</label>
+        <input type="text" id="rg" name="rg">
+        <label for="cpf">CPF</label>
+        <input type="text" id="cpf" name="cpf">
+        <label for="endereco">Endereço</label>
+        <input type="text" id="endereco" name="endereco">
+        <input type="submit" value="cadastrar">
+    </form>
+    <form action="/selectVenda" method="POST">
+        <label for="placa_carro">Digite a placa:</label>
+        <input type="text" id="placa_carro" name="placa_carro">
+        <input type="submit" value="Buscar">
+    </form>
 </body>
 </html>

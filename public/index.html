@@ -1,16 +1,21 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" ng-app="app">
 <head>
     <meta charset="UTF-8">
     <title>Página Inicial</title>
 </head>
-<body>
+<body ng-controller="listCar">
+    <div>
+        <h2 ng-bind="message"></h2>
+    </div>
     <h1>Cadastro de Vendas</h1>
     <form action="/cadVenda" method="POST">
         <label for="placa">Placa</label>
         <input type="text" id="placa" name="placa">
         <label for="marca">Marca</label>
-        <input type="text" id="marca" name="marca">
+        <select name="marca" id="marca">
+            <option value="">Selecione a Montadora</option>
+        </select>
         <label for="modelo">Modelo</label>
         <input type="text" id="modelo" name="modelo">
         <label for="ano">Ano</label>
@@ -25,10 +30,19 @@
         <input type="text" id="endereco" name="endereco">
         <input type="submit" value="cadastrar">
     </form>
-    <form action="/selectVenda" method="POST">
+    <form action="/svenda" method="POST" id="formBuscar">
         <label for="placa_carro">Digite a placa:</label>
         <input type="text" id="placa_carro" name="placa_carro">
-        <input type="submit" value="Buscar">
+        <input type="submit" value="Buscar" id="buscar">
     </form>
+    <div id="objeto"></div>
+    <script src="angular.js"></script>
+    <script>
+        angular.module("app", [])
+        angular.module("app").controller("listCar", function($scope) {
+            $scope.message = "Olá"
+        })
+    </script>
+    <script src="carAjax.js"></script>
 </body>
 </html>

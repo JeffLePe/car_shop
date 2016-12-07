@@ -17,9 +17,9 @@ router.post("/cadVenda", (request, response) => {
     cadvenda(venda, response)
 })
 
-router.post("/selectVenda", (request, response) => {
+router.post("/svenda", (request, response) => {
     var codVenda = request.body.placa_carro
-    selvenda(codVenda, response)
+    selvenda(codVenda, request, response)
 })
 
 module.exports = router

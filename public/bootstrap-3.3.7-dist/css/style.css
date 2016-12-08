@@ -1,0 +1,43 @@
+.input-group {
+    width: 80%;
+    height: 20px;
+    margin: auto;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.titulo {
+    text-align: center;
+}
+
+body {
+    background-color: azure;
+}
+
+fieldset {
+    margin: auto;
+    margin-top: 20px;
+    width: 50%;
+    border: 1px solid darkcyan;
+    border-radius: 20px;
+    background-color: darkcyan;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+#btAtualizar {
+    width: 20%;
+    margin-left: 40%;
+    color: black;
+    background-color: yellow;
+}
+
+#buscar {
+    color: white;
+    background-color: darkgreen;
+}
+
+#deletar {
+    color: white;
+    background-color: red;
+}

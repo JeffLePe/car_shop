@@ -10,9 +10,9 @@
 <body ng-controller="listCar">
     <div class="container-fluid">
         <div class="titulo">
-            <h1>Cadastro de Vendas</h1>
+            <h1>Atualização do Cadastro de Vendas</h1>
         </div>
-        <form action="/cadVenda" method="POST">
+        <form action="/upvenda" method="POST">
             <fieldset>
                 <div class="input-group">
                     <input type="text" id="placa" name="placa" class="form-control" placeholder="Placa">
@@ -49,7 +49,7 @@
                     <input type="text" id="endereco" name="endereco" class="form-control" placeholder="Endereço">
                 </div>
                 <div class="input-group">
-                    <input type="submit" value="Cadastrar" class="btn btn-default">
+                    <input type="submit" value="Atualizar" class="btn btn-default">
                 </div>
             </fieldset>
         </form>
@@ -58,7 +58,7 @@
                 <div class="input-group">
                     <input type="text" id="placa_carro" name="placa_carro" class="form-control" placeholder="Buscar pela placa...">
                     <span class="input-group-btn">
-                        <input type="submit" value="Buscar" id="buscar" class="btn ">
+                        <input type="submit" value="Buscar" id="buscar" class="btn">
                     </span>
                 </div>
             </form>
@@ -70,7 +70,6 @@
                     </span>
                 </div>
             </form>
-            <button class="btn" id="btAtualizar"><a href="update.html">Atualizar</a></button>
         </fieldset>
         <div id="objeto"></div>
     </div>
